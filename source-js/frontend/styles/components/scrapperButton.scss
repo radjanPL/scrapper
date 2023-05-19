@@ -1,0 +1,59 @@
+$button_container : ".start-scrapper";
+$var-padding : 9px 20px;
+
+#{$button_container}{
+    background-color: #e12a27;
+    border: 1px solid #e12a27;
+    font-weight: normal;
+    line-height: 1;
+    padding: $var-padding;
+    position: relative;
+    text-transform: uppercase;
+    
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: #ce1110;
+    }
+
+    &__text{
+        color: #ffffff;
+        transition: all 0.2s;
+    }
+
+    &__text::after{
+        content: "Run Scrapper";
+    }
+
+    &__spinner{
+        padding: $var-padding;
+    }
+
+    &__spinner::after{
+        content: "";
+        height: 16px;
+        position: absolute;
+        width: 16px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 4px solid transparent;
+        border-top-color: #ffffff;
+        border-radius: 50%;
+        animation: animation-spinner 1s ease infinite;
+    }
+}
+
+@keyframes animation-spinner {
+    from{
+        transform: rotate(0turn);
+    }
+
+    to{
+        transform: rotate(1turn);
+    }
+}

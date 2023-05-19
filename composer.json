@@ -1,0 +1,6 @@
+{
+    "name": "wordpress/scrapper",
+    "type": "wordpress-plugin",
+    "version": "1.0.0",
+    "require": {}
+}

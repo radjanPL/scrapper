@@ -1,0 +1,8 @@
+$container : ".container-scrapper-wrapper";
+
+#{$container}{
+    
+    font-size: 16px;
+
+    @import './styles/components/scrapperButton.scss';
+}
